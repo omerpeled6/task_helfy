@@ -1,0 +1,116 @@
+.productsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.noResults {
+  font-size: 1.5rem;
+  color: #f44336;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.productCard:hover .ingredients {
+  display: block;
+}
+
+.inStock {
+  border: 3px solid #4caf50;
+}
+
+.outOfStock {
+  border: 3px solid #f44336;
+  background-color: #ffe6e6;
+}
+
+.toggleStockButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toggleStockButton:hover {
+  background-color: #007bff;
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #007bff;
+  color: black;
+}
+
+.pagination button:disabled {
+  background-color: #f1f1f1;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ingredients {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.productCard:hover .ingredients {
+  display: block;
+  color: #000;
+  background-color: #f1f1f1;
+}

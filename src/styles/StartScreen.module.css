@@ -1,0 +1,39 @@
+.startScreen {
+  text-align: center;
+  padding: 20px;
+}
+
+.startScreen h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.startScreen p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.startButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.startButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.startButton:active {
+  transform: scale(0.97);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
